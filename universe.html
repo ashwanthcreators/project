@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superman universe</title>
+    <style>
+       
+        body{
+            background: url(https://cdn.pixabay.com/photo/2021/05/22/01/47/mountains-6272362_960_720.jpg);
+            text-align: center;
+            color: white;
+            background-size: cover;
+            
+        }
+        #ca{
+            color: burlywood;font-size: 50px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;text-align: center;
+        }
+        h1{
+            color: tomato;
+        }
+        h2{
+            color: blue;
+        }
+        h3{
+            font-size: 50px;
+        }
+        #user,button,#hero{
+         width: 200px;
+        padding: 10px;
+        border-radius: 10px;
+        border: none;
+         box-shadow: 0px 1px 4px rgba(0 , 0, 0, .2);
+
+        }
+        button{
+            width: 100px;
+            background-color: orange;
+            color: white;
+        }
+        #hero{
+            width: 300px;
+        }
+        li{
+            color: darkgoldenrod;font-size: 40px;
+        }
+        img{
+            border: 30px groove yellow;
+            border-radius: 50%;
+           
+        }
+        .ty{
+            border-radius: 10%;
+            border: pink;
+        }
+      
+        p{
+            font-size: 50px;
+            color: burlywood;
+        }
+        .hj{
+            border: 1px  solid;
+        }
+    
+    </style>
+</head>
+<body>
+    <img src="https://i.pinimg.com/originals/fe/e0/9a/fee09ac50bec6f9ff702f2ddfca0848b.gif" class="ty" alt="" width="100" height="100">
+    <header>
+        <h1> your super hero's universe </h1>
+        <h2>Check out it here</h2>
+      
+</header>
+
+
+
+
+<input type="text" name="" id="hero" placeholder="Enter any number between 1 to 4" >
+    <button onclick="hero()">Submit</button><br><br>
+    <p>Type your heroes number here</p>
+    <ol>
+<li>Superman</li><br><br>
+<img src="https://cdn.pixabay.com/photo/2016/11/06/15/17/superman-1803165__340.png"   alt="" width="200" height="200">
+
+<li>Batman</li><br><br>
+<img src="https://cdn.pixabay.com/photo/2020/07/06/17/51/batman-5377804_960_720.png" alt="" width="400" height="200">
+<li>Ironman</li><br><br>
+<img src="https://cdn.pixabay.com/photo/2015/11/14/21/31/ironman-1043700__340.jpg" alt="" width="400" height="200">
+<li>Captain America</li><br><br>
+<img src="https://cdn.pixabay.com/photo/2014/12/03/13/13/captain-555410__340.png" alt="" width="200" height="200">
+
+</ol>
+
+
+<h1>Result</h1>
+<img src="https://cdn2.scratch.mit.edu/get_image/project/505170624_144x108.png" width="300" height="300" class="hj" ><br> 
+<h3 id="heroresult"></h3>
+
+</body>
+<script>     
+
+function hero(){
+
+
+    var num = "";
+    var hero = document.getElementById("hero").value;
+
+
+    switch(parseInt(hero)){
+
+
+    case 1: num = "DC Universe";
+     break;
+     case 2: num = "DC Universe";
+     break;
+     case 3: num = "Marvel Cinematic Universe";
+     break;
+     case 4: num = "Marvel Cinematic Universe";
+     break;
+     default: num = "Not Valid"
+
+    }
+ document.getElementById("heroresult").innerText = 
+ "He belongs to  " + num;
+}
+</script>
+<a href="home.html" id="ca">Home</a>
+</html>

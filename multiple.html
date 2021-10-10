@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session 6 p2</title>
+    <style>
+        body{
+            
+            background: url(https://cdn.pixabay.com/photo/2016/11/30/12/09/question-mark-1872634_960_720.jpg);
+            text-align: center;
+            width: 100vw;
+            height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-size: cover;
+        }
+        h1{
+            color: orange;
+        }
+
+        #hi{
+            color: blue;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        button{
+            color: orangered;
+            background-color: yellow;
+            font-size: 20px;
+
+        }
+        h2{color: white;
+
+        }
+        #ca{
+            color: burlywood;font-size: 50px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Want to learn Multiplication ??</h1>
+        <h2 id="hi">Multiplication Table</h2>
+    </header>
+    <img src="https://content.presentermedia.com/files/animsp/00000000/460/jenny_holding_math_multiplication_symbol_md_wm.gif" alt="" width="200" height="200"><br><br>
+   
+    <a href="home.html" id="ca">Home</a><br><br><br>
+ <input type="text" name="" id="num" placeholder="Enter number">
+ <input type="text" name="" id="mul" placeholder="Enter multiple" ><br><br>
+    <button onclick="test()">try</button>
+    <h2>Result</h2>
+    <h4 id="result"></h4>
+    
+</body>
+<script>
+function test() {
+    
+    var num = parseInt(document.getElementById("num").value);
+    var mul = parseInt(document.getElementById("mul").value);
+    var count = 1
+    while (count <= mul) {
+        var result = num * count;
+        var text = num + " X " + count + " = " + result;
+        var create = document.createElement("h2");
+        create.innerText = text;
+      document.body.append(create);
+       count =   count + 1;
+    } 
+}
+</script>
+
+
+</html>
